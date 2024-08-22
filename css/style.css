@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    
+    background-image: radial-gradient(circle at 30% 94%, rgba(245, 245, 245,0.06) 0%, rgba(245, 245, 245,0.06) 50%,rgba(21, 21, 21,0.06) 50%, rgba(21, 21, 21,0.06) 100%),radial-gradient(circle at 59% 19%, rgba(248, 248, 248,0.06) 0%, rgba(248, 248, 248,0.06) 50%,rgba(87, 87, 87,0.06) 50%, rgba(87, 87, 87,0.06) 100%),radial-gradient(circle at 7% 11%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),linear-gradient(229deg, rgb(189, 189, 189),rgb(205, 205, 205));
+}
+/* topbar debut */
+/* pour espacer les deux element titre-menu */
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+/* topbat titre style */
+nav h1{
+    color: #181515;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+nav h1:hover{
+    opacity: 0.8;
+}
+/* end */
+/*  */
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, color 0.15s;
+}
+nav .onglets a:hover{
+    color: #fff;
+}
+nav .onglets a:active{
+    opacity: 0.8;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(..img/background-header.jpg);
+    background-size: cover;
+    color:#fff ;
+    padding: 40px;
+    border-bottom: 2px solid #6f6f6f;
+}
+header h1{
+    font-family:'Playfair Display' ;
+    font-size: 40px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    cursor: pointer;
+    transition: padding 0.20s, opacity 0.15s ;
+}
+
+header button:hover{
+    padding: 20px 20px 20px 20px;
+    background-color: #fdfdfd;
+    color: #6f6f6f;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    cursor: pointer;
+    opacity: 0.9;
+}
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:black;
+    color:#fff;
+ }
+ .main .content .card .right img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+footer{
+   
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px;
+   
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;   
+}
+footer .services .service{
+    margin-right: 30px;
+}
+footer .services .service p{
+    max-width: 368px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+    }
+}
