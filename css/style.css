@@ -4,7 +4,6 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    
     background-image: radial-gradient(circle at 30% 94%, rgba(245, 245, 245,0.06) 0%, rgba(245, 245, 245,0.06) 50%,rgba(21, 21, 21,0.06) 50%, rgba(21, 21, 21,0.06) 100%),radial-gradient(circle at 59% 19%, rgba(248, 248, 248,0.06) 0%, rgba(248, 248, 248,0.06) 50%,rgba(87, 87, 87,0.06) 50%, rgba(87, 87, 87,0.06) 100%),radial-gradient(circle at 7% 11%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),linear-gradient(229deg, rgb(189, 189, 189),rgb(205, 205, 205));
 }
 /* topbar debut */
@@ -15,6 +14,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid #6f6f6f;
+    position: relative;
 }
 /* topbat titre style */
 nav h1{
@@ -43,6 +43,7 @@ nav .onglets a{
 }
 nav .onglets a:hover{
     color: #fff;
+    border-bottom: 1px dashed #ffffff;
 }
 nav .onglets a:active{
     opacity: 0.8;
@@ -52,11 +53,11 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(..img/background-header.jpg);
+    background-color: #514a4a;
     background-size: cover;
     color:#fff ;
     padding: 40px;
-    border-bottom: 2px solid #6f6f6f;
+    border-bottom: 2px double #6f6f6f;
 }
 header h1{
     font-family:'Playfair Display' ;
@@ -81,14 +82,9 @@ header button{
 }
 
 header button:hover{
-    padding: 20px 20px 20px 20px;
+    padding: 15px 30px 15px 30px;
     background-color: #fdfdfd;
-    color: #6f6f6f;
-    border: none;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-family: 'Playfair Display';
-    cursor: pointer;
+    color: #514a4a;
     opacity: 0.9;
 }
 .main{
@@ -106,13 +102,30 @@ header button:hover{
 .main .content .card .left{
     flex: 0 0 30%;
     padding: 20px;
-    background-color:black;
+    background-color: #514a4a;
     color:#fff;
+    border-radius: 10px;
+    box-shadow: -6px 10px 20px rgba(0, 0, 0, 0.6);
  }
+ .main .content .card .left h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px dashed white;
+    width: 33%;
+ }
+
  .main .content .card .right img{
     height:300px;
     width: 400px;
     margin-top: 5px;
+    
+  border-radius: 10px;
+    transition: opacity 0.20s, height 0.20s, width 0.20s ;
+}
+.main .content .card .right img:hover{
+  opacity: 0.5;
+  height:400px;
+  width: 500px;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.6);
 }
 footer{
    
@@ -124,8 +137,8 @@ footer{
 }
 footer h1{
     font-family: 'Playfair Display', serif;
-    border-bottom: 1px solid white;
-    width: 20%;
+    border-bottom: 1px dashed white;
+    width: 14%;
     padding-bottom: 5px;
 }
 footer .services{
@@ -146,8 +159,4 @@ footer #contact{
     display:flex;
 }
 
-@media screen and (max-width:680px){
-    nav .onglets{
-        margin-left: 0px;
-    }
-}
+
