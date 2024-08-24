@@ -10,7 +10,6 @@ body{
 /* pour espacer les deux element titre-menu */
 nav{
     display:flex;
-    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid #6f6f6f;
@@ -53,7 +52,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #514a4a;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(187%2c 155%2c 92%2c 1)'%3e%3c/rect%3e%3cpath d='M1536 560L0 560 L0 292.45Q103.71 276.16%2c 120 379.87Q168.79 356.66%2c 192 405.45Q192.43 333.88%2c 264 334.31Q294.1 292.41%2c 336 322.52Q385.93 300.44%2c 408 350.37Q418.53 288.9%2c 480 299.44Q554.12 253.56%2c 600 327.67Q646.38 302.05%2c 672 348.42Q691.73 296.15%2c 744 315.89Q828.14 280.03%2c 864 364.18Q932.88 313.06%2c 984 381.95Q1005.45 283.4%2c 1104 304.85Q1169.36 250.21%2c 1224 315.56Q1281.19 300.75%2c 1296 357.95Q1342.92 284.88%2c 1416 331.8Q1511.84 307.64%2c 1536 403.48z' fill='rgba(33%2c 32%2c 27%2c 1)'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 390.39Q53.18 323.57%2c 120 376.75Q187.58 372.33%2c 192 439.91Q251.43 427.34%2c 264 486.77Q270.25 373.02%2c 384 379.28Q451.89 327.17%2c 504 395.06Q594.46 413.52%2c 576 503.99Q563.09 419.08%2c 648 406.16Q675.62 361.77%2c 720 389.39Q771.98 369.37%2c 792 421.34Q877.63 386.98%2c 912 472.61Q956.79 445.4%2c 984 490.19Q984.77 418.96%2c 1056 419.73Q1074.71 366.44%2c 1128 385.15Q1211.24 348.39%2c 1248 431.64Q1294.63 358.27%2c 1368 404.91Q1411.6 376.51%2c 1440 420.11Q1504.5 412.62%2c 1512 477.12z' fill='rgba(125%2c 96%2c 37%2c 1)'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 481.35Q72.98 482.33%2c 72 555.3Q143.07 506.37%2c 192 577.43Q224.6 490.03%2c 312 522.63Q337.96 476.59%2c 384 502.55Q460.48 459.03%2c 504 535.52Q540.54 452.06%2c 624 488.6Q694.03 438.63%2c 744 508.67Q796.15 488.82%2c 816 540.97Q845.11 450.08%2c 936 479.19Q1018.44 441.63%2c 1056 524.07Q1144.62 492.69%2c 1176 581.31Q1188.6 521.9%2c 1248 534.5Q1284.21 450.71%2c 1368 486.92Q1421.01 467.93%2c 1440 520.94Q1495.33 504.27%2c 1512 559.59z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;   
     background-size: cover;
     color:#fff ;
     padding: 40px;
@@ -138,13 +138,14 @@ footer{
 footer h1{
     font-family: 'Playfair Display', serif;
     border-bottom: 1px dashed white;
-    width: 14%;
+    width: 15%;
     padding-bottom: 5px;
 }
 footer .services{
     margin-top: -10px;
     display:flex;
-    flex-wrap:wrap;   
+    flex-wrap:wrap;  
+    margin-bottom: 50px; 
 }
 footer .services .service{
     margin-right: 30px;
@@ -152,11 +153,34 @@ footer .services .service{
 footer .services .service p{
     max-width: 368px;
 }
-footer #contact{
+footer .contact{
     color: rgb(181, 181, 181);
     align-items: center;
     justify-content: center;
     display:flex;
 }
+footer .icon-link{
+    align-items: center;
+    justify-content: center;
+}
+footer .icon-link ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+footer .icon-link ul li{
+   display: inline;
+}
+footer .icon-link ul li a{
+   text-decoration: none;
+   font-size: 20px;
+ }
+ 
+
+
 
 
