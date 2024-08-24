@@ -22,3 +22,7 @@
 ## Creation du depot distant
 ** Repostorie name "Demo-site-burger"
 **
+## Rajout
+** rajout du style en css et modification des cards, des icons dans le footer etc...
+**
+
